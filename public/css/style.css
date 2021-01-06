@@ -1,0 +1,55 @@
+body {
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  text-align: center;
+}
+header #logo {
+  width: 50%;
+  padding: 20px 10px 10px 10px;
+}
+header div {
+  padding: 15px;
+  background-color: #eaeaea;
+  box-shadow: inset 0px 7px 4px -5px #cacaca;
+}
+header #marker {
+  position: absolute;
+  left: 24%;
+  width: 18px;
+  height: 18px;
+}
+header span {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+#explore {
+  margin: auto;
+  text-align: center;
+  padding: 10px 0px 40px;
+  background-color: #f6f6f6;
+}
+#explore h1 {
+  padding: 0px 30px;
+  font-size: 1.6em;
+  font-weight: bold;
+}
+#explore p {
+  font-size: large;
+  font-weight: 400;
+}
+#explore button {
+  color: white;
+  font-size: inherit;
+  font-weight: 600;
+  width: 60%;
+  height: 45px;
+  border: none;
+  border-radius: 25px;
+  background: linear-gradient(175deg, #ee73da, #ad5fdc);
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,57 @@
+$color-town: rgb(234, 234, 234);
+$color-explore: rgb(246, 246, 246);
+$marker-size: 18px;
+
+body {
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    text-align: center;
+    #logo {
+        width: 50%;
+        padding: 20px 10px 10px 10px;
+    }
+    div {
+        padding: 15px;
+        background-color: $color-town;
+        box-shadow: inset 0px 7px 4px -5px rgb(202, 202, 202);
+    }
+    #marker {
+        position: absolute;
+        left: 24%;
+        width: $marker-size;
+        height: $marker-size;
+    }
+    span {
+        font-size: 1.1em;
+        font-weight: bold;
+    }
+}
+
+#explore {
+    margin: auto;
+    text-align: center;
+    padding: 10px 0px 40px;
+    background-color: $color-explore;
+    & h1 {
+        padding: 0px 30px;
+        font-size: 1.6em;
+        font-weight: bold;
+    }
+    p {
+        font-size: large;
+        font-weight: 400;
+    }
+    button {
+        color: white;
+        font-size: inherit;
+        font-weight: 600;
+        width: 60%;
+        height: 45px;
+        border: none;
+        border-radius: 25px;
+        background: linear-gradient(175deg, rgb(238, 115, 218), rgb(173, 95, 220));
+    }
+}
