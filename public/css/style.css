@@ -48,6 +48,7 @@ header span {
   width: 60%;
   height: 45px;
   border: none;
+  outline: none;
   border-radius: 25px;
   background: linear-gradient(175deg, #FF79DA, #9356DC);
 }
@@ -123,11 +124,31 @@ main #main_section_2 .section_wrapper a .picture {
 }
 main #main_section_2 .section_wrapper a .text {
   color: black;
-  height: 60px;
+  height: 45px;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 15px 15px 15px;
+}
+main #main_section_2 .section_wrapper a .text div {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 15px 15px 0px 15px;
+}
+main #main_section_2 .section_wrapper a .text div .name {
+  font-weight: bold;
+}
+main #main_section_2 .section_wrapper a .text .fa-heart {
+  font-size: 1.6em;
+  padding: 5px 10px;
+  color: white;
+  -webkit-text-stroke: 0.07em black;
+}
+main #main_section_2 .section_wrapper a .text .fa-heart:hover {
+  background: -webkit-linear-gradient(25deg, #FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-text-stroke: 0px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .restaurant_picture1 {
@@ -151,7 +172,6 @@ main #main_section_2 .section_wrapper a .text {
 }
 
 footer {
-  color: white;
   padding: 30px 25px;
   background-color: #353535;
 }
@@ -164,6 +184,10 @@ footer nav {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+footer nav a {
+  color: white;
+  text-decoration: none;
 }
 footer nav a .fas {
   padding-right: 10px;

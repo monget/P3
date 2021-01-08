@@ -38,7 +38,7 @@ header {
     text-align: center;
     padding: 10px 0px 50px;
     background-color: $color-background;
-    & h1 {
+    h1 {
         padding: 0px 30px;
         font-size: 1.6em;
         font-weight: bold;
@@ -54,6 +54,7 @@ header {
         width: 60%;
         height: 45px;
         border: none;
+        outline: none;
         border-radius: 25px;
         background: linear-gradient(175deg, #FF79DA, #9356DC);
     }
@@ -61,15 +62,15 @@ header {
 
 main {
     margin-top: 40px;
-    & #main_section_1 {
+    #main_section_1 {
         padding-bottom: 50px;
     }
-    & section {
-        & .section_wrapper {
+    section {
+        .section_wrapper {
             width: 90%;
             margin: auto;
         }
-        & #operation {
+        #operation {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -86,7 +87,7 @@ main {
                     background-color: rgb(245, 237, 255);
                     color: $color-icons;
                 }
-                & .number {
+                .number {
                     width: 25px;
                     left: -13px;
                     color: white;
@@ -96,24 +97,24 @@ main {
                     border-radius: 100%;
                     background-color: $color-icons;
                 }
-                & i {
+                i {
                     text-align: center;
                     font-size: 1.2em;
                     padding: 0px 15px 0px 9px;
                     width: $icons-operation-size;
                    
                 }
-                & .text {
+                .text {
                     color: black !important;
                     font-weight: bold;
                 }
             }
         }
-    } & #main_section_2 {
+    } #main_section_2 {
         padding: 40px 0px;
         background-color: $color-background;
-        & .section_wrapper {
-            & a {
+        .section_wrapper {
+            a {
                 height: 240px;
                 display: flex;
                 flex-direction: column;
@@ -122,25 +123,45 @@ main {
                 text-decoration: none;
                 background-color: #ffffff;
                 box-shadow: 0px 4px 8px 0px #cacaca;;
-                & .picture {
+                .picture {
                     height: 170px;
                     background-repeat: no-repeat;
                     background-size: 100%;
                     border-radius: 15px 15px 0px 0px;
                 }
-                & .text {
+                .text {
                     color: black;
-                    height: 60px;
+                    height: 45px;
                     display: flex;
-                    flex-direction: column;
                     justify-content: space-between;
-                    padding: 15px 15px 0px 15px;
+                    padding: 15px 15px 15px 15px;
+                    div {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        .name {
+                            font-weight: bold;
+                        }
+                    }
+                    .fa-heart {
+                        font-size: 1.6em;
+                        padding: 5px 10px;
+                        color: white;
+                        -webkit-text-stroke: 0.07em black;
+                        &:hover {
+                            background: -webkit-linear-gradient(25deg, #FF79DA, #9356DC);
+                            background-clip: text;
+                            -webkit-text-stroke: 0px;
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                            
+                        }
+                    }
                 }
             }
         }
     }
 }
-
 
 .restaurant_picture1 {
     background-position: bottom;
@@ -161,25 +182,26 @@ main {
 
 
 footer {
-    color: white;
     padding: 30px 25px;
     background-color: rgb(53, 53, 53);
-    & #logo_footer {
+    #logo_footer {
         width: 35%;
         padding-bottom: 15px;
     }
-    & nav {
+    nav {
         height: 110px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        & a {
-            & .fas {
+        a {
+            color: white;
+            text-decoration: none;
+            .fas {
                 padding-right: 10px;
                 width: $icons-footer-size;
                 height: $icons-footer-size;
             }
-            & .fa-hands-helping {
+            .fa-hands-helping {
                 font-size: 0.8em;
             }
         }
