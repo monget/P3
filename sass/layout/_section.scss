@@ -1,0 +1,37 @@
+.section {
+    padding: 40px 0px;
+    &--pddg {
+        padding: 10px 0px 50px;
+    }
+    &--bg {
+        background-color: $color-background;
+    }
+    &__prev {
+        width: 90%;
+        margin: auto;
+        &--align {
+            text-align: center;
+        }
+    }
+    &__heading {
+        padding: 0px 35px;
+        font-size: 1.6em;
+        font-weight: bold;
+    }
+    &__byline {
+        font-size: large;
+        font-weight: 400;
+    }
+    &__btn {
+        color: $color-white;
+        font-size: inherit;
+        font-weight: 600;
+        width: 65%;
+        height: 45px;
+        border: none;
+        cursor: pointer;
+        outline: none;
+        border-radius: 25px;
+        background: linear-gradient(-3deg, $color-primary, $color-secondary);
+    }
+}

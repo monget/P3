@@ -1,0 +1,22 @@
+.header {
+    text-align: center;
+    &__logo {
+        width: 50%;
+        padding: 20px 10px 10px 10px;
+    }
+    &__town {
+        padding: 15px;
+        background-color: $color-town;
+        box-shadow: inset 0px 7px 4px -5px $color-shadow;
+    }
+    &__marker {
+        position: absolute;
+        left: 24%;
+        width: $icon-marker-size;
+        height: $icon-marker-size;
+    }
+    &__location {
+        font-size: 1.1em;
+        font-weight: bold;
+    }
+}

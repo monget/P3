@@ -1,0 +1,28 @@
+.footer {
+    padding: 30px 25px;
+    background-color: $color-footer;
+    &__logo {
+        width: 35%;
+        padding-bottom: 15px;
+    }
+    &__nav {
+        height: 110px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        & > a {
+            color: $color-white;
+            text-decoration: none;
+            & i {
+                padding-right: 10px;
+            width: $icons-footer-size;
+            height: $icons-footer-size;
+            }
+        }
+        &--size {
+            font-size: 0.8em;
+        }
+    }
+}
+
+    

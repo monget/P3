@@ -3,72 +3,74 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-header {
+.header {
   text-align: center;
 }
-header #logo {
+.header__logo {
   width: 50%;
   padding: 20px 10px 10px 10px;
 }
-header div {
+.header__town {
   padding: 15px;
   background-color: #eaeaea;
   box-shadow: inset 0px 7px 4px -5px #cacaca;
 }
-header #marker {
+.header__marker {
   position: absolute;
   left: 24%;
   width: 18px;
   height: 18px;
 }
-header span {
+.header__location {
   font-size: 1.1em;
   font-weight: bold;
 }
 
-#explore {
-  margin: auto;
-  text-align: center;
+.section {
+  padding: 40px 0px;
+}
+.section--pddg {
   padding: 10px 0px 50px;
+}
+.section--bg {
   background-color: #f6f6f6;
 }
-#explore h1 {
+.section__prev {
+  width: 90%;
+  margin: auto;
+}
+.section__prev--align {
+  text-align: center;
+}
+.section__heading {
   padding: 0px 35px;
   font-size: 1.6em;
   font-weight: bold;
 }
-#explore p {
+.section__byline {
   font-size: large;
   font-weight: 400;
 }
-#explore button {
+.section__btn {
   color: #ffffff;
   font-size: inherit;
   font-weight: 600;
-  width: 60%;
+  width: 65%;
   height: 45px;
   border: none;
+  cursor: pointer;
   outline: none;
   border-radius: 25px;
   background: linear-gradient(-3deg, #9356DC, #FF79DA);
 }
 
-main {
-  margin-top: 40px;
-}
-main #main_section_1 {
-  padding-bottom: 50px;
-}
-main section .section_wrapper {
-  width: 90%;
-  margin: auto;
-}
-main section #operation {
+.operation-display {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-main section #operation div {
+
+.operation-prev {
   width: 81%;
   padding: 25px;
   left: 15px;
@@ -78,13 +80,13 @@ main section #operation div {
   background-color: #f6f6f6;
   box-shadow: 0px 5px 9px 2px #eaeaea;
 }
-main section #operation div:hover {
+.operation-prev:hover {
   background-color: #f5edff;
 }
-main section #operation div:hover i {
+.operation-prev:hover i {
   color: #9356DC;
 }
-main section #operation div .number {
+.operation-prev__number {
   width: 25px;
   left: -13px;
   color: #ffffff;
@@ -94,23 +96,19 @@ main section #operation div .number {
   border-radius: 100%;
   background-color: #9356DC;
 }
-main section #operation div > i {
+.operation-prev__icon {
   text-align: center;
   font-size: 1.2em;
   padding: 0px 15px 0px 9px;
   width: 25px;
   color: #7e7e7e;
 }
-main section #operation div .text {
+.operation-prev__text {
   color: black !important;
   font-weight: bold;
 }
-main #main_section_2 {
-  padding: 40px 0px;
-  background-color: #f6f6f6;
-}
-main #main_section_2 .section_wrapper a {
-  height: 240px;
+
+.restaurant-prev {
   display: flex;
   flex-direction: column;
   margin: 15px 0px;
@@ -119,13 +117,29 @@ main #main_section_2 .section_wrapper a {
   background-color: #ffffff;
   box-shadow: 0px 4px 8px 0px #cacaca;
 }
-main #main_section_2 .section_wrapper a .picture {
+
+.restaurant-picture {
   height: 170px;
-  background-repeat: no-repeat;
   background-size: 100%;
   border-radius: 15px 15px 0px 0px;
 }
-main #main_section_2 .section_wrapper a .picture div {
+.restaurant-picture--1 {
+  background-position: bottom;
+  background-image: url("../img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+}
+.restaurant-picture--2 {
+  background-position: 50% 61%;
+  background-image: url("../img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+}
+.restaurant-picture--3 {
+  background-position: bottom;
+  background-image: url("../img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+}
+.restaurant-picture--4 {
+  background-position: 50% 90%;
+  background-image: url("../img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+}
+.restaurant-picture__new {
   position: relative;
   float: right;
   text-align: center;
@@ -139,22 +153,24 @@ main #main_section_2 .section_wrapper a .picture div {
   width: 70px;
   padding: 6px;
 }
-main #main_section_2 .section_wrapper a .text {
+
+.restaurant {
   color: black;
   height: 45px;
   display: flex;
   justify-content: space-between;
-  padding: 15px 15px 15px 15px;
+  padding: 15px;
 }
-main #main_section_2 .section_wrapper a .text div {
+.restaurant__info {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-main #main_section_2 .section_wrapper a .text div .name {
+.restaurant__name {
   font-weight: bold;
 }
-main #main_section_2 .section_wrapper a .text .div_heart {
+
+.like {
   margin: 5px 10px 0px 0px;
   font-size: 27px;
   width: 27px;
@@ -164,7 +180,17 @@ main #main_section_2 .section_wrapper a .text .div_heart {
   text-align: center;
   background-color: black;
 }
-main #main_section_2 .section_wrapper a .text .div_heart::before {
+.like__heart {
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  width: 29px;
+  height: 29px;
+  transition-duration: 1s;
+  background-color: #ffffff;
+  mix-blend-mode: lighten;
+}
+.like::before {
   top: 0;
   left: 0;
   opacity: 0;
@@ -175,67 +201,37 @@ main #main_section_2 .section_wrapper a .text .div_heart::before {
   position: absolute;
   background: linear-gradient(190deg, #9356DC, #FF79DA);
 }
-main #main_section_2 .section_wrapper a .text .div_heart:hover::before {
+.like:hover::before {
   opacity: 1;
 }
-main #main_section_2 .section_wrapper a .text .div_heart:hover .full {
+.like:hover .like__heart--full {
   opacity: 0;
 }
-main #main_section_2 .section_wrapper a .text .fa-heart {
-  position: absolute;
-  top: -1px;
-  left: -1px;
-  width: 29px;
-  height: 29px;
-  transition-duration: 1s;
-  background-color: #ffffff;
-  mix-blend-mode: lighten;
-}
 
-.restaurant_picture1 {
-  background-position: bottom;
-  background-image: url("../img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
-}
-
-.restaurant_picture2 {
-  background-position: 50% 61%;
-  background-image: url("../img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
-}
-
-.restaurant_picture3 {
-  background-position: bottom;
-  background-image: url("../img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
-}
-
-.restaurant_picture4 {
-  background-position: 50% 90%;
-  background-image: url("../img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
-}
-
-footer {
+.footer {
   padding: 30px 25px;
   background-color: #353535;
 }
-footer #logo_footer {
+.footer__logo {
   width: 35%;
   padding-bottom: 15px;
 }
-footer nav {
+.footer__nav {
   height: 110px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-footer nav a {
+.footer__nav > a {
   color: #ffffff;
   text-decoration: none;
 }
-footer nav a .fas {
+.footer__nav > a i {
   padding-right: 10px;
   width: 15px;
   height: 15px;
 }
-footer nav a .fa-hands-helping {
+.footer__nav--size {
   font-size: 0.8em;
 }
 
