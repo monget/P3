@@ -52,6 +52,7 @@ body {
   left: 35px;
 }
 .header__return i {
+  color: black;
   font-size: larger;
 }
 
@@ -229,6 +230,9 @@ body {
 .restaurant-picture--menu {
   height: 276px;
   border-radius: 0px;
+}
+.restaurant-picture--position {
+  background-position: 50% 45%;
 }
 
 .main {
