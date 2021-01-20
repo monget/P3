@@ -3,6 +3,9 @@
     &__logo {
         width: 50%;
         padding: 20px 10px 10px 10px;
+        &--size {
+            width: 40%;
+        }
     }
     &__town {
         padding: 15px;
@@ -18,5 +21,13 @@
     &__location {
         font-size: 1.1em;
         font-weight: bold;
+    }
+    &__return {
+        position: absolute;
+        top: 20px;
+        left: 35px;
+        i {
+            font-size: larger;
+        }
     }
 }

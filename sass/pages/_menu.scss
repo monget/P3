@@ -1,0 +1,89 @@
+.restaurant-picture {
+    &--menu {
+        height: 276px;
+        border-radius: 0px;
+    }
+}
+
+.main {
+    border-radius: 40px 40px 0px 0px;
+    position: relative;
+    background: $color-background;
+    top: -47px;
+    &__heading {
+        display: flex;
+        width: 90%;
+        padding-top: 30px;
+        margin: auto;
+        justify-content: space-between;
+    }
+    &__title {
+        margin: 0px;
+        font-size: 1.8em;
+        font-family: 'Shrikhand', cursive;
+    }
+}
+
+.like {
+    &--mg {
+        margin: 5px 25px 0px 0px;
+    }
+    &__heart--bg {
+        background-color: $color-background;
+    }
+}
+
+.menu {
+    width: 92%;
+    margin: auto;
+    padding-top: 15px;
+    &__prev {
+        width: 95%;
+        margin: 0px auto 5px;
+    }
+    &__title {
+        font-size: 1.1em;
+    }
+    &__underline {
+        width: 45px;
+        top: -10px;
+        position: relative;
+        background: $color-tertiary;
+        border: 1px solid $color-tertiary;
+    }
+}
+
+.dish {
+    padding: 11px 12px;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    background-color: $color-white;
+    box-shadow: 0px 5px 9px 2px $color-town;
+    &__prev {
+        display: flex;
+        flex-direction: column;
+    }
+    &__name {
+        padding-bottom: 5px;
+        font-size: 1.25em;
+        font-weight: bold;
+    }
+    &__accompaniment {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__price {
+        font-weight: bold;
+        padding-right: 10px;
+    }
+}
+
+.order {
+    position: relative;
+    top: 27px;
+    padding-bottom: 30px;
+    margin-bottom: -18px;
+    text-align: center;
+    background: #f6f6f6;
+    height: 81px;
+}

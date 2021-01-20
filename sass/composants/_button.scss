@@ -1,0 +1,17 @@
+.btn {
+    color: $color-white;
+    font-size: inherit;
+    font-weight: 600;
+    width: 65%;
+    height: 45px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    border-radius: 25px;
+    background: linear-gradient(-3deg, $color-primary, $color-secondary);
+    box-shadow: 0px 5px 9px 2px $color-shadow;
+    &--size {
+        width: 47%;
+        height: 50px;
+    }
+}
