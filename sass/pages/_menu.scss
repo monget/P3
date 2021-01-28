@@ -105,7 +105,7 @@
     &__bar {
         width: 20%;
         height: 71px;
-        background-color: #15dea5;
+        background-color: $color-tertiary;
         transition: margin-right 0.4s ease-in-out;
         margin-right: -97px;
     }
