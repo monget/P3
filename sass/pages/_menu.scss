@@ -56,14 +56,37 @@
     }
 }
 
+
+@keyframes rotate {
+    0% {
+        transform: rotate(-360deg);
+        
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+
 .dish {
-    padding: 11px 12px;
+    display: flex;
+    overflow: hidden;
     margin-bottom: 15px;
     border-radius: 20px;
     background-color: $color-white;
     box-shadow: 0px 5px 9px 2px $color-town;
+    &:hover {
+        & > .dish__bar {
+            margin-right: 0px;
+            & > .dish__check {
+                animation: rotate 0.5s 0.05s ease-in-out;
+            }
+        }
+    }
     &__prev {
+        width: 94%;
         display: flex;
+        padding: 11px 12px;
         flex-direction: column;
     }
     &__name {
@@ -78,6 +101,23 @@
     &__price {
         font-weight: bold;
         padding-right: 10px;
+    }
+    &__bar {
+        width: 20%;
+        height: 71px;
+        background-color: #15dea5;
+        transition: margin-right 0.4s ease-in-out;
+        margin-right: -97px;
+    }
+    &__check {
+        background: url('../img/icons/check-circle-solid.svg');
+        position: relative;
+        top: 18px;
+        margin: auto;
+        width: 30px;
+        height: 30px;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 }
 
