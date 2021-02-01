@@ -104,24 +104,6 @@ body {
     width: 20%;
   }
 }
-.header__logo--size {
-  width: 40%;
-}
-@media (min-width: 768px) and (max-width: 1024px) {
-  .header__logo--size {
-    width: 35%;
-  }
-}
-@media (min-width: 1024px) and (max-width: 1920px) {
-  .header__logo--size {
-    width: 30%;
-  }
-}
-@media (min-width: 1920px) {
-  .header__logo--size {
-    width: 20%;
-  }
-}
 .header__town {
   padding: 15px;
   background-color: #eaeaea;
@@ -159,10 +141,15 @@ body {
 }
 .header__return {
   position: absolute;
-  top: 20px;
+  top: 25px;
   left: 35px;
   font-size: larger;
   color: black;
+}
+@media (max-width: 320px) {
+  .header__return {
+    top: 21px;
+  }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   .header__return {

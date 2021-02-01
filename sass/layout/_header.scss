@@ -12,18 +12,6 @@
         @include screen {
             width: 20%;
         }
-        &--size {
-            width: 40%;
-            @include tablet {
-                width: 35%;
-            }
-            @include laptop {
-                width: 30%;
-            }
-            @include screen {
-                width: 20%;
-            }
-        }
     }
     &__town {
         padding: 15px;
@@ -54,10 +42,13 @@
     }
     &__return {
         position: absolute;
-        top: 20px;
+        top: 25px;
         left: 35px;
         font-size: larger;
         color: black;
+        @include mobile-s{
+            top: 21px;
+        }
         @include tablet {
             top: 26px;
             font-size: 2rem;
