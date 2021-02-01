@@ -2,6 +2,12 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    @include laptop {
+        flex-direction: row;
+    }
+    @include screen {
+        flex-direction: row;
+    }
 }
 
 .operation-prev {
@@ -13,6 +19,19 @@
     border-radius: 20px;
     background-color: $color-background;
     box-shadow: 0px 5px 9px 2px $color-town;
+    @include mobile-xs {
+        width: 86%;
+        padding: 25px 0px 25px 25px;
+    }
+    @include tablet {
+        width: 88%;
+    }
+    @include laptop {
+        width: 26%;
+    }
+    @include screen {
+        width: 30%;
+    }
     &:hover {
         background-color: rgb(245, 237, 255);
         box-shadow: 0px 5px 9px 2px $color-shadow;
@@ -40,6 +59,25 @@
     &__text {
         color: black !important;
         font-weight: bold;
+        @include mobile-xs {
+            font-size: smaller;
+        }
+        @include screen {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+.restaurant-display {
+    @include laptop {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 15px;
+    }
+    @include screen {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 50px;
     }
 }
 
@@ -56,9 +94,18 @@
 .restaurant-picture {
     height: 170px;
     background-size: 100%;
+    background-repeat: no-repeat;
     border-radius: 15px 15px 0px 0px;
+    @include tablet {
+        height: 250px;
+    }
+    @include laptop {
+        height: 270px;
+    }
+    @include screen {
+        height: 300px;
+    }
     &--1 {
-        background-position: bottom;
         background-image: url("../img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
     }
     &--2 {
@@ -66,12 +113,18 @@
         background-image: url("../img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
     }
     &--3 {
-        background-position: bottom;
+        background-position: 50% 61%;
         background-image: url("../img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+        @include mobile-xs {
+            background-position: initial;
+        }
     }
     &--4 {
         background-position: 50% 90%;
         background-image: url("../img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+        @include mobile-s {
+            background-position: initial;
+        }
     }
     &__new {
         position: relative;
@@ -96,6 +149,9 @@
     display: flex;
     justify-content: space-between;
     padding: 15px;
+    @include screen {
+        font-size: larger;
+    }
     &__info {
         display: flex;
         flex-direction: column;

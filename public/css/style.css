@@ -7,7 +7,7 @@ body {
   color: #ffffff;
   font-size: inherit;
   font-weight: 600;
-  width: 65%;
+  width: 250px;
   height: 45px;
   border: none;
   cursor: pointer;
@@ -17,7 +17,7 @@ body {
   box-shadow: 0px 5px 9px 2px #eaeaea;
 }
 .btn--size {
-  width: 47%;
+  width: 150px;
   height: 50px;
 }
 .btn:hover {
@@ -53,9 +53,14 @@ body {
   z-index: 10000;
 }
 .loading__wrap {
-  width: 35%;
+  width: 65%;
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 280px) {
+  .loading__wrap {
+    width: 80%;
+  }
 }
 .loading__star {
   background: url("../img/icons/michelin-star.png");
@@ -84,8 +89,38 @@ body {
   width: 50%;
   padding: 20px 10px 10px 10px;
 }
+@media (min-width: 768px) and (max-width: 1024px) {
+  .header__logo {
+    width: 35%;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1920px) {
+  .header__logo {
+    width: 30%;
+  }
+}
+@media (min-width: 1920px) {
+  .header__logo {
+    width: 20%;
+  }
+}
 .header__logo--size {
   width: 40%;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .header__logo--size {
+    width: 35%;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1920px) {
+  .header__logo--size {
+    width: 30%;
+  }
+}
+@media (min-width: 1920px) {
+  .header__logo--size {
+    width: 20%;
+  }
 }
 .header__town {
   padding: 15px;
@@ -98,6 +133,26 @@ body {
   width: 18px;
   height: 18px;
 }
+@media (max-width: 280px) {
+  .header__marker {
+    left: 18%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .header__marker {
+    left: 35%;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1920px) {
+  .header__marker {
+    left: 40%;
+  }
+}
+@media (min-width: 1920px) {
+  .header__marker {
+    left: 45%;
+  }
+}
 .header__location {
   font-size: 1.1em;
   font-weight: bold;
@@ -106,10 +161,26 @@ body {
   position: absolute;
   top: 20px;
   left: 35px;
-}
-.header__return i {
-  color: black;
   font-size: larger;
+  color: black;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .header__return {
+    top: 26px;
+    font-size: 2rem;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1920px) {
+  .header__return {
+    top: 30px;
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 1920px) {
+  .header__return {
+    top: 30px;
+    font-size: 4rem;
+  }
 }
 
 .section {
@@ -138,10 +209,62 @@ body {
   font-weight: 400;
 }
 
+.footer {
+  padding: 30px 25px;
+  background-color: #353535;
+}
+.footer__logo {
+  width: 35%;
+  padding-bottom: 15px;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .footer__logo {
+    width: 30%;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1920px) {
+  .footer__logo {
+    width: 20%;
+  }
+}
+@media (min-width: 1920px) {
+  .footer__logo {
+    width: 10%;
+  }
+}
+.footer__nav {
+  height: 110px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer__nav > a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.footer__nav > a i {
+  padding-right: 10px;
+  width: 15px;
+  height: 15px;
+}
+.footer__nav--size {
+  font-size: 0.8em;
+}
+
 .operation-display {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+@media (min-width: 1024px) and (max-width: 1920px) {
+  .operation-display {
+    flex-direction: row;
+  }
+}
+@media (min-width: 1920px) {
+  .operation-display {
+    flex-direction: row;
+  }
 }
 
 .operation-prev {
@@ -153,6 +276,27 @@ body {
   border-radius: 20px;
   background-color: #f6f6f6;
   box-shadow: 0px 5px 9px 2px #eaeaea;
+}
+@media (max-width: 280px) {
+  .operation-prev {
+    width: 86%;
+    padding: 25px 0px 25px 25px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .operation-prev {
+    width: 88%;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1920px) {
+  .operation-prev {
+    width: 26%;
+  }
+}
+@media (min-width: 1920px) {
+  .operation-prev {
+    width: 30%;
+  }
 }
 .operation-prev:hover {
   background-color: #f5edff;
@@ -182,6 +326,31 @@ body {
   color: black !important;
   font-weight: bold;
 }
+@media (max-width: 280px) {
+  .operation-prev__text {
+    font-size: smaller;
+  }
+}
+@media (min-width: 1920px) {
+  .operation-prev__text {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1920px) {
+  .restaurant-display {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+  }
+}
+@media (min-width: 1920px) {
+  .restaurant-display {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 50px;
+  }
+}
 
 .restaurant-prev {
   display: flex;
@@ -196,10 +365,25 @@ body {
 .restaurant-picture {
   height: 170px;
   background-size: 100%;
+  background-repeat: no-repeat;
   border-radius: 15px 15px 0px 0px;
 }
+@media (min-width: 768px) and (max-width: 1024px) {
+  .restaurant-picture {
+    height: 250px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1920px) {
+  .restaurant-picture {
+    height: 270px;
+  }
+}
+@media (min-width: 1920px) {
+  .restaurant-picture {
+    height: 300px;
+  }
+}
 .restaurant-picture--1 {
-  background-position: bottom;
   background-image: url("../img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
 }
 .restaurant-picture--2 {
@@ -207,12 +391,22 @@ body {
   background-image: url("../img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
 }
 .restaurant-picture--3 {
-  background-position: bottom;
+  background-position: 50% 61%;
   background-image: url("../img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+}
+@media (max-width: 280px) {
+  .restaurant-picture--3 {
+    background-position: initial;
+  }
 }
 .restaurant-picture--4 {
   background-position: 50% 90%;
   background-image: url("../img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+}
+@media (max-width: 320px) {
+  .restaurant-picture--4 {
+    background-position: initial;
+  }
 }
 .restaurant-picture__new {
   position: relative;
@@ -235,6 +429,11 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 15px;
+}
+@media (min-width: 1920px) {
+  .restaurant {
+    font-size: larger;
+  }
 }
 .restaurant__info {
   display: flex;
@@ -287,8 +486,28 @@ body {
 }
 
 .restaurant-picture--menu {
-  height: 276px;
+  height: 265px;
   border-radius: 0px;
+}
+@media (max-width: 320px) {
+  .restaurant-picture--menu {
+    height: 226px;
+  }
+}
+@media (max-width: 280px) {
+  .restaurant-picture--menu {
+    height: 195px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1920px) {
+  .restaurant-picture--menu {
+    height: 300px;
+  }
+}
+@media (min-width: 1920px) {
+  .restaurant-picture--menu {
+    height: 700px;
+  }
 }
 .restaurant-picture--position {
   background-position: 50% 45%;
@@ -312,18 +531,51 @@ body {
   font-size: 1.8em;
   font-family: "Shrikhand", cursive;
 }
+@media (max-width: 320px) {
+  .main__title {
+    width: 80%;
+  }
+}
 
 .like--mg {
   margin: 5px 25px 0px 0px;
 }
+@media (max-width: 320px) {
+  .like--mg {
+    margin: 5px -1px 0px 0px;
+  }
+}
 .like__heart--bg {
   background-color: #f6f6f6;
+}
+
+@media (min-width: 1024px) and (max-width: 1920px) {
+  article {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 1920px) {
+  article {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .menu {
   width: 95%;
   margin: auto;
   padding-top: 15px;
+}
+@media (min-width: 1024px) and (max-width: 1920px) {
+  .menu {
+    margin: 0px auto;
+  }
+}
+@media (min-width: 1920px) {
+  .menu {
+    margin: 0px auto;
+  }
 }
 .menu__prev {
   width: 95%;
@@ -399,6 +651,11 @@ body {
   white-space: nowrap;
   text-overflow: ellipsis;
 }
+@media (min-width: 1024px) and (max-width: 1920px) {
+  .dish__prev {
+    padding: 11px 0px 12px 11px;
+  }
+}
 .dish__name {
   padding-bottom: 5px;
   font-size: 1.25em;
@@ -442,33 +699,6 @@ body {
   text-align: center;
   background: #f6f6f6;
   height: 81px;
-}
-
-.footer {
-  padding: 30px 25px;
-  background-color: #353535;
-}
-.footer__logo {
-  width: 35%;
-  padding-bottom: 15px;
-}
-.footer__nav {
-  height: 110px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.footer__nav > a {
-  color: #ffffff;
-  text-decoration: none;
-}
-.footer__nav > a i {
-  padding-right: 10px;
-  width: 15px;
-  height: 15px;
-}
-.footer__nav--size {
-  font-size: 0.8em;
 }
 
 /*# sourceMappingURL=style.css.map */

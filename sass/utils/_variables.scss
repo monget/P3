@@ -11,3 +11,14 @@ $color-footer: #353535;
 $icon-marker-size: 18px;
 $icons-operation-size: 25px;
 $icons-footer-size: 15px;
+
+
+$breakpoints: (
+    mobile-xs: 280px,
+    mobile-s: 320px,
+    mobile-m: 375px,
+    mobile-l: 424px,
+    tablet: 768px,
+    laptop: 1024px,
+    screen: 1920px
+);

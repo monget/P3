@@ -3,8 +3,26 @@
     &__logo {
         width: 50%;
         padding: 20px 10px 10px 10px;
+        @include tablet {
+            width: 35%;
+        }
+        @include laptop {
+            width: 30%;
+        }
+        @include screen {
+            width: 20%;
+        }
         &--size {
             width: 40%;
+            @include tablet {
+                width: 35%;
+            }
+            @include laptop {
+                width: 30%;
+            }
+            @include screen {
+                width: 20%;
+            }
         }
     }
     &__town {
@@ -17,6 +35,18 @@
         left: 24%;
         width: $icon-marker-size;
         height: $icon-marker-size;
+        @include mobile-xs {
+            left: 18%;
+        }
+        @include tablet {
+            left: 35%;
+        }
+        @include laptop {
+            left: 40%;
+        }
+        @include screen {
+            left: 45%;
+        }
     }
     &__location {
         font-size: 1.1em;
@@ -26,9 +56,19 @@
         position: absolute;
         top: 20px;
         left: 35px;
-        i {
-            color: black;
-            font-size: larger;
+        font-size: larger;
+        color: black;
+        @include tablet {
+            top: 26px;
+            font-size: 2rem;
+        }
+        @include laptop {
+            top: 30px;
+            font-size: 2.5rem;
+        }
+        @include screen {
+            top: 30px;
+            font-size: 4rem;
         }
     }
 }

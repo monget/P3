@@ -1,7 +1,19 @@
 .restaurant-picture {
     &--menu {
-        height: 276px;
+        height: 265px;
         border-radius: 0px;
+        @include mobile-s {
+            height: 226px;
+        }
+        @include mobile-xs {
+            height: 195px;
+        }
+        @include laptop {
+            height: 300px;
+        }
+        @include screen {
+            height: 700px;
+        }
     }
     &--position {
         background-position: 50% 45%;
@@ -24,15 +36,33 @@
         margin: 0px;
         font-size: 1.8em;
         font-family: 'Shrikhand', cursive;
+        @include mobile-s {
+            width: 80%;
+        }
     }
 }
 
 .like {
     &--mg {
         margin: 5px 25px 0px 0px;
+        @include mobile-s {
+            margin: 5px -1px 0px 0px;
+        }
     }
     &__heart--bg {
         background-color: $color-background;
+    }
+
+}
+
+article {
+    @include laptop {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    @include screen {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
@@ -40,6 +70,12 @@
     width: 95%;
     margin: auto;
     padding-top: 15px;
+    @include laptop {
+        margin: 0px auto;
+    }
+    @include screen {
+        margin: 0px auto;
+    }
     &__prev {
         width: 95%;
         margin: 0px auto 5px;
@@ -112,6 +148,9 @@
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
+        @include laptop {
+            padding: 11px 0px 12px 11px;
+        }
     }
     &__name {
         padding-bottom: 5px;

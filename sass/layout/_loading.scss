@@ -27,9 +27,12 @@
     animation: loading 1.2s 1.5s both;
     z-index: 10000;
     &__wrap {
-        width: 35%;
+        width: 65%;
         display: flex;
         justify-content: space-between;
+        @include mobile-xs {
+            width: 80%;
+        }
     }
     &__star {
         background: url('../img/icons/michelin-star.png');

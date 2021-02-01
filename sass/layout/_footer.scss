@@ -4,6 +4,15 @@
     &__logo {
         width: 35%;
         padding-bottom: 15px;
+        @include tablet {
+            width: 30%;
+        }
+        @include laptop {
+            width: 20%;
+        }
+        @include screen {
+            width: 10%;
+        }
     }
     &__nav {
         height: 110px;
