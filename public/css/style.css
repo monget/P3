@@ -537,13 +537,13 @@ body {
 }
 
 @media (min-width: 1024px) and (max-width: 1920px) {
-  article {
+  .grid-menu {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
 }
 @media (min-width: 1920px) {
-  article {
+  .grid-menu {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
